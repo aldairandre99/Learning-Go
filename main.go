@@ -6,32 +6,16 @@ import (
 
 func main(){
 
-	// Formatting Verbs for Printf()
+	// Go Arrays
 
-	// Go offers several formatting verbs that can be used with the Printf() function.
+	// Arrays are used to store multiple values of the same type in a single variable, instead of declaring separate variables for each value.
 
+	// In Go, there are two ways to declare an array 
 
-	/* 
-		
-		%v 	Prints the value in the default format
-		%#v 	Prints the value in Go-syntax format
-		%T 	Prints the type of the value
-		%% 	Prints the % sign
-		
-		
-	*/
+	var arr1 = [4]int{1,2,3,4}
+	arr2 := [3]int{5,6,7}
 
-	var i = 15.5
-  var txt = "Hello World!"
-
-  fmt.Printf("%v\n", i)
-  fmt.Printf("%#v\n", i)
-  fmt.Printf("%v%%\n", i)
-  fmt.Printf("%T\n", i)
-
-  fmt.Printf("%v\n", txt)
-  fmt.Printf("%#v\n", txt)
-  fmt.Printf("%T\n", txt) 
+	fmt.Printf("\nArray1 : %v\nArray : %v\n\n",arr1,arr2)
 
 
 }
