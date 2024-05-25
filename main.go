@@ -6,22 +6,32 @@ import (
 
 func main(){
 
-	// Syntax
+	// Formatting Verbs for Printf()
 
-	// const CONSTNAME type = value
+	// Go offers several formatting verbs that can be used with the Printf() function.
 
-	// Note: The value of a constant must be assigned when you declare it. 
 
-	// Multiple Constants Declaration
+	/* 
+		
+		%v 	Prints the value in the default format
+		%#v 	Prints the value in Go-syntax format
+		%T 	Prints the type of the value
+		%% 	Prints the % sign
+		
+		
+	*/
 
-	// Multiple constants can be grouped together into a block for readability:
+	var i = 15.5
+  var txt = "Hello World!"
 
-	const YEAR_BIRTH = 1999
-	const (
-		MONTH = 12 
-		DAY = 30
-	)
+  fmt.Printf("%v\n", i)
+  fmt.Printf("%#v\n", i)
+  fmt.Printf("%v%%\n", i)
+  fmt.Printf("%T\n", i)
 
-	fmt.Printf("\nBirthday Year: %v\nMonth: %v\nDay: %v\n\n",YEAR_BIRTH,MONTH,DAY)
+  fmt.Printf("%v\n", txt)
+  fmt.Printf("%#v\n", txt)
+  fmt.Printf("%T\n", txt) 
+
 
 }
