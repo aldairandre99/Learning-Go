@@ -6,18 +6,22 @@ import (
 
 func main(){
 
-	//Syntax
-	// var variablename type = value //type is string 
+	// Syntax
 
-	// Or you can use 
+	// const CONSTNAME type = value
 
-	// var variablename = value /type is inferred
-	// variablename := value /type is inferred only can be used insede functions
+	// Note: The value of a constant must be assigned when you declare it. 
 
-	var age = 24
-	var name string = "Jonh"
-	lastname := "Fake"
+	// Multiple Constants Declaration
 
-	fmt.Printf("\nHello...\nMy name is %v %v\nAnd i'm a %v year old based in Angola\n",name,lastname,age)
-	println(" ")
+	// Multiple constants can be grouped together into a block for readability:
+
+	const YEAR_BIRTH = 1999
+	const (
+		MONTH = 12 
+		DAY = 30
+	)
+
+	fmt.Printf("\nBirthday Year: %v\nMonth: %v\nDay: %v\n\n",YEAR_BIRTH,MONTH,DAY)
+
 }
